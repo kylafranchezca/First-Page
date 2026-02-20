@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kyla Franchezca Ylanan</title>
+    <title>Portfolio - Kyla Franchezca Ylanan</title>
 
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url("paperbg.jpg");
-            background-size:100 cover;
+            background-image: url("paper.jpg"); /* your crumpled paper */
+            background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
             text-align: center;
         }
 
         /* Navigation */
         .nav {
-            margin-top: 30px;
+            padding-top: 40px;
             font-size: 18px;
         }
 
@@ -26,26 +29,34 @@
             margin: 0 15px;
         }
 
-        /* Main Title */
+        /* Main Content */
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .title {
-            margin-top: 150px;
-            font-size: 300px;
-            font-weight: bold;
+            font-size: 130px;
+            font-weight: 900;
+            margin: 0;
         }
 
         .name {
-            font-size: 30px;
+            font-size: 32px;
             font-weight: bold;
-            margin-top: 50px;
+            margin-top: 20px;
         }
 
-        /* Footer website */
+        /* Footer */
         .footer {
             position: absolute;
-            bottom: 20px;
+            bottom: 25px;
             left: 40px;
             font-size: 18px;
         }
+
     </style>
 </head>
 
@@ -59,13 +70,10 @@
         <a href="contact.html">Get in touch</a>
     </div>
 
-    <!-- Main Title -->
-    <div class="title">
-        Portfolio.
-    </div>
-
-    <div class="name">
-        Kyla Franchezca Ylanan
+    <!-- Main Centered Content -->
+    <div class="container">
+        <h1 class="title">Portfolio.</h1>
+        <div class="name">Kyla Franchezca Ylanan</div>
     </div>
 
     <!-- Footer -->
