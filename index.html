@@ -1,92 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio - Kyla Franchezca Ylanan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Kyla Franchezca Ylanan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-image: url("paperbg.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            position: relative;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* NAVIGATION */
-        .nav {
-            text-align: center;
-            padding-top: 45px;
-            font-size: 20px;
-            font-weight: 400;
-            letter-spacing: 1px;
-        }
+body{
+    font-family:'Poppins', sans-serif;
+    background-image:url("paperbg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    position:relative;
+}
 
-        .nav a {
-            text-decoration: none;
-            color: #111;
-            margin: 0 22px;
-        }
+/* NAVIGATION */
+nav{
+    text-align:center;
+    padding-top:4vh;
+    font-size:clamp(12px, 1.2vw, 16px);
+    font-weight:400;
+    letter-spacing:1px;
+}
 
-        /* MAIN TITLE POSITION */
-        .title-container {
-            position: absolute;
-            top: 52%;
-            left: 46%;  
-            transform: translate(-50%, -50%);
-        }
+nav a{
+    text-decoration:none;
+    color:#111;
+    margin:0 15px;
+}
 
-        .title {
-            font-size: 165px;
-            font-weight: 900;
-            line-height: 1;
-            color: #000;
-        }
+/* MAIN SECTION */
+.main{
+    position:absolute;
+    top:52%;
+    left:47%; /* slightly left like Canva */
+    transform:translate(-50%, -50%);
+}
 
-        .name {
-            font-size: 50px;
-            font-weight: 600;
-            margin-top: 30px;
-            margin-left: 10px; 
-        }
+/* BIG TITLE */
+.title{
+    font-size:clamp(60px, 12vw, 180px);
+    font-weight:900;
+    line-height:1;
+    color:#000;
+}
 
-        /* FOOTER */
-        .footer {
-            position: absolute;
-            bottom: 35px;
-            left: 80px; 
-            font-size: 18px;
-        }
+/* NAME */
+.name{
+    margin-top:2vh;
+    font-size:clamp(16px, 2.2vw, 36px);
+    font-weight:600;
+    margin-left:8vw; /* shifts name slightly right under "folio." */
+}
 
-    </style>
+/* FOOTER */
+.footer{
+    position:absolute;
+    bottom:4vh;
+    left:6vw;
+    font-size:clamp(12px, 1.2vw, 18px);
+    color:#111;
+}
+
+</style>
 </head>
 
 <body>
 
-    <div class="nav">
-        <a href="about.html">About me</a> |
-        <a href="education.html">Education</a> |
-        <a href="work.html">Work Experience</a> |
-        <a href="contact.html">Get in touch</a>
-    </div>
+<nav>
+    <a href="about.html">About me</a> |
+    <a href="education.html">Education</a> |
+    <a href="work.html">Work Experience</a> |
+    <a href="contact.html">Get in touch</a>
+</nav>
 
-    <div class="title-container">
-        <div class="title">Portfolio.</div>
-        <div class="name">Kyla Franchezca Ylanan</div>
-    </div>
+<div class="main">
+    <div class="title">Portfolio.</div>
+    <div class="name">Kyla Franchezca Ylanan</div>
+</div>
 
-    <div class="footer">
-        www.reallygreatsite.com
-    </div>
+<div class="footer">
+    www.reallygreatsite.com
+</div>
 
 </body>
 </html>
